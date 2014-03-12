@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT planifications (planif)*>
+<!ELEMENT planif (movie,schedule*) >
+<!ELEMENT schedule (date,hour)>
+<!ELEMENT movie (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT hour (#PCDATA)>

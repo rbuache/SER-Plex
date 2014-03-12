@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT locations (location)*>
+<!ELEMENT location (name, address, tel, rooms*) >
+<!ELEMENT room (name,nbSeat)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT tel (#PCDATA)>
+<!ELEMENT nbSeat (#PCDATA)>
