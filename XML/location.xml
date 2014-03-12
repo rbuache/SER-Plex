@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" ?>
+<!DOCTYPE locations SYSTEM "../DTD/location.dtd" >
+<locations>
+	<location>
+		<name>Flon</name>
+		<address>route de geneve</address>
+		<tel>021/8008080</tel>
+		<rooms>
+			<name>01</name>
+			<nbSeat>200</nbSeat>
+		</rooms>
+	</location>
+</locations>

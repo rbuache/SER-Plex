@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" ?>
+<!DOCTYPE planifications SYSTEM "../DTD/planification.dtd" >
+<planifications>
+	<movie>
+		<name>Transformers</name>
+		<schedule>
+			<date>12.03.2014</date>
+			<hour>15:00</hour>
+		</schedule>
+	</movie>
+</planifications>
