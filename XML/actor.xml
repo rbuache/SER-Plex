@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE actors SYSTEM "../DTD/actor.dtd">
+
+<actors>
+	<actor>
+		<name>Shia LaBeouf</name>
+		<biography>Brat Jr., son of Brat Sr. and Bratova. Born in Bratland</biography>
+		<born>11.06.1986</born>
+		<picture>http://ia.media-imdb.com/images/M/MV5BMTMyNDA0MDI4OV5BMl5BanBnXkFtZTcwMDQzMzEwMw@@._V1_SY317_CR16,0,214,317_.jpg</picture>
+		<filmography>
+			<movie>Transformers</movie>
+			<movie>Transformers 2</movie>
+		</filmography>
+	</actor>
+</actors>

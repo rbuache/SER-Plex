@@ -2,7 +2,6 @@
 
 <!ELEMENT critics (critic)*>
 <!ELEMENT critic (movieName, criticID, content, language, source, date, note)>
-<!ELEMENT actor (actorName, role)> <!--role is either "lead" or "secondary"-->
 <!ELEMENT movieName (#PCDATA)>
 <!ELEMENT criticID (#PCDATA)>
 <!ELEMENT content (#PCDATA)>

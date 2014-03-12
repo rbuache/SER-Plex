@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE critics SYSTEM "../DTD/critic.dtd">
+
+<critics>
+	<critic>
+		<movieName>Transformers</movieName>
+		<criticID>1</criticID>
+		<content>THIS MOVIE SUCKS</content>
+		<language>English</language>
+		<source>Rui</source>
+		<date>12.03.2014</date>
+		<note>2</note>
+	</critic>
+</critics>
