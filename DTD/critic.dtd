@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT critics (critic)*>
+<!ELEMENT critic (movieName, criticID, content, language, source, date, note)>
+<!ELEMENT actor (actorName, role)> <!--role is either "lead" or "secondary"-->
+<!ELEMENT movieName (#PCDATA)>
+<!ELEMENT criticID (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT note (#PCDATA)>
+
+
