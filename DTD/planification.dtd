@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT planifications (movie)*>
 <!ELEMENT movie (name,schedule*)>
-<!ELEMENT schedule (date,hour)>
+<!ELEMENT schedule (location,roomName, date,hour)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT roomName (#PCDATA)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT hour (#PCDATA)>
