@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="../XSL/Stylesheet.xsl"?>
+
 <!DOCTYPE planifications SYSTEM "../DTD/planification.dtd" >
+
 <planifications>
 	<movie>
 		<name>Transformers</name>
