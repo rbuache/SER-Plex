@@ -4,8 +4,7 @@
 	<movie>
 		<name>Transformers</name>
 		<schedule>
-			<location>Flon</location>
-			<roomName>1</roomName>
+			<location room="1">Flon</location>
 			<date>12.03.2014</date>
 			<hour>15:00</hour>
 		</schedule>

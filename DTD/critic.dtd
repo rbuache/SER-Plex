@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!ELEMENT critics (critic)*>
-<!ELEMENT critic (movieName, criticID, content, language, source, date, note)>
-<!ELEMENT movieName (#PCDATA)>
-<!ELEMENT criticID (#PCDATA)>
+<!ELEMENT critics (movie)*>
+<!ELEMENT movie (critic)*>
+<!ATTLIST movie name CDATA #REQUIRED>
+<!ELEMENT critic (content, language, source, date, note)>
+<!ATTLIST critic id CDATA #REQUIRED>
 <!ELEMENT content (#PCDATA)>
 <!ELEMENT language (#PCDATA)>
 <!ELEMENT source (#PCDATA)>

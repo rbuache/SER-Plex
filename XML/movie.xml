@@ -8,15 +8,6 @@
 		<resume>Decepticons vs Optimus Prime</resume>
 		<year>2007</year>
 		<director>Michael Bay</director>
-		<actor>
-			<actorName>Shia LaBeouf</actorName>
-			<role>lead</role>
-		</actor>
-		<actor>
-			<actorName>Megan Fox</actorName>
-			<role>lead</role>
-		</actor>
-		<critic>1</critic>
 		<picture>http://ia.media-imdb.com/images/M/MV5BMTQwNjU5MzUzNl5BMl5BanBnXkFtZTYwMzc1MTI3._V1_SY317_CR0,0,214,317_.jpg</picture>
 		<genre>Action</genre>
 		<minimumAge>12</minimumAge>

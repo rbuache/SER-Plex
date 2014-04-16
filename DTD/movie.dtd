@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!ELEMENT movies (movie)*>
-<!ELEMENT movie (name, resume, year, director+, actor*, critic*, picture*, genre+, minimumAge)>
-<!ELEMENT actor (actorName, role)> <!--role is either "lead" or "secondary"-->
+<!ELEMENT movie (name, resume, year, director+, picture*, genre+, minimumAge)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT resume (#PCDATA)>
 <!ELEMENT year (#PCDATA)>
@@ -10,7 +9,4 @@
 <!ELEMENT picture (#PCDATA)>
 <!ELEMENT genre (#PCDATA)>
 <!ELEMENT minimumAge (#PCDATA)>
-<!ELEMENT actorName (#PCDATA)>
-<!ELEMENT role (#PCDATA)>
-<!ELEMENT critic (#PCDATA)>
 
