@@ -9,7 +9,23 @@
 		<schedule>
 			<location room="1">Flon</location>
 			<date>12.03.2014</date>
-			<hour>15:00</hour>
+			<hour>15.00</hour>
+		</schedule>
+	</movie>
+	<movie>
+		<name>Equilibrium</name>
+		<schedule>
+			<location room="2">Galerie</location>
+			<date>12.03.2014</date>
+			<hour>17.00</hour>
+		</schedule>
+	</movie>
+	<movie>
+		<name>American Outlaws</name>
+		<schedule>
+			<location room="1">Flon</location>
+			<date>12.03.2014</date>
+			<hour>18.00</hour>
 		</schedule>
 	</movie>
 </planifications>
