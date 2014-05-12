@@ -12,5 +12,12 @@
 			<date>12.03.2014</date>
 			<note>2/5</note>
 		</critic>
+		<critic id="2">
+			<content>THIS MOVIE IS BAD</content>
+			<language>English</language>
+			<source>Rui</source>
+			<date>12.03.2014</date>
+			<note>2/5</note>
+		</critic>
 	</movie>
 </critics>
