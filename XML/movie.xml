@@ -20,7 +20,7 @@
 		<director>Michael Bay</director>
 		<picture>http://ia.media-imdb.com/images/M/MV5BMTQwNjU5MzUzNl5BMl5BanBnXkFtZTYwMzc1MTI3._V1_SY317_CR0,0,214,317_.jpg</picture>
 		<genre>Action</genre>
-		<minimumAge>12</minimumAge>
+		<minimumAge>14</minimumAge>
 	</movie>
 	<movie>
 		<name>American Outlaws</name>
@@ -29,6 +29,6 @@
 		<director>Michael Bay</director>
 		<picture>http://ia.media-imdb.com/images/M/MV5BMTQwNjU5MzUzNl5BMl5BanBnXkFtZTYwMzc1MTI3._V1_SY317_CR0,0,214,317_.jpg</picture>
 		<genre>Action</genre>
-		<minimumAge>12</minimumAge>
+		<minimumAge>13</minimumAge>
 	</movie>
 </movies>
