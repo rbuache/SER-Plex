@@ -1,0 +1,60 @@
+package gui;
+
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+@SuppressWarnings("serial")
+public class Main extends JFrame{
+
+	public Main(){
+		
+		this.setSize(500, 500);
+		this.setTitle("Administration du complexe");
+		
+		Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+		this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
+		
+		this.setVisible(true);
+
+		//Dialog : XML database path
+		//new DialogDatabase();
+		String s = (String)JOptionPane.showInputDialog(
+				   this,
+				   "Choose the database path :",
+				   "XML database path",
+				   JOptionPane.QUESTION_MESSAGE,
+				   null,
+				   null, // c'est ouvert !!!
+				   "trois"); // valeur initiale
+
+	}
+	
+	private class DialogDatabase extends JDialog{
+		
+		JTextField text = new JTextField();
+		
+		public DialogDatabase(){
+
+	        setTitle("Enter database");
+	        setSize(500,300);
+	        setModal(true);
+	        setLocationRelativeTo(Main.this);
+	        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+	        
+	        this.add(new JLabel("XML database path :"));
+	        this.add(text);
+	        
+	        
+	        text.requestFocusInWindow();
+	        
+	        setVisible(true);
+		}
+	}
+}
