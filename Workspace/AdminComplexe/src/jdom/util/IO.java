@@ -11,14 +11,17 @@ import org.jdom2.output.XMLOutputter;
 
 public class IO {
 
-	//Source:http://cynober.developpez.com/tutoriel/java/xml/jdom/
-	static void save(Document d,String file) throws IOException {
+	public static void save(Document d,String file) throws IOException {
 	   XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
-	   sortie.output(d, new FileOutputStream(file));
+	   
+	   FileOutputStream out = new FileOutputStream(file);
+	   sortie.output(d, out);
+	   out.close();
 	}
 
-	static Document getDocument(String file) throws Exception {
+	public static Document getDocument(String file) throws Exception {
 		SAXBuilder sxb = new SAXBuilder();
-		return sxb.build(new File(file));
+		File f = new File(file);
+		return sxb.build(f);
 	}
 }

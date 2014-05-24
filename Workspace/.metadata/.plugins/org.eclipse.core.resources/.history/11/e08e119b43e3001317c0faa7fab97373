@@ -1,0 +1,17 @@
+package launcher;
+
+import xml.XmlLocation;
+import gui.Main;
+
+public class Launcher {
+
+	public static String databasePath;
+	public static XmlLocation location;
+	
+	public static void main(String[] args){
+		
+		new Main();
+		System.out.println("ok");
+		location = new XmlLocation(databasePath);
+	}
+}

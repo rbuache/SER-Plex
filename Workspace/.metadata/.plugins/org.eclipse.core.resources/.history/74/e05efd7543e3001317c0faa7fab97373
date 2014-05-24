@@ -1,0 +1,8 @@
+package xml;
+
+public class XmlLocation {
+
+	public XmlLocation(){}
+
+
+}

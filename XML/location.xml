@@ -1,25 +1,27 @@
-﻿<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../XSL/Stylesheet.xsl"?>
-
-<!DOCTYPE locations SYSTEM "../DTD/location.dtd" >
-
+<!DOCTYPE locations SYSTEM "../DTD/location.dtd">
 <locations>
-	<location>
-		<name>Flon</name>
-		<address>Route du Flon</address>
-		<tel>021/8008080</tel>
-		<rooms>
-			<name>01</name>
-			<nbSeat>200</nbSeat>
-		</rooms>
-	</location>
-	<location>
-		<name>Galerie</name>
-		<address>Route du Flon</address>
-		<tel>021/8008080</tel>
-		<rooms>
-			<name>01</name>
-			<nbSeat>200</nbSeat>
-		</rooms>
-	</location>
+  <location>
+    <name>Flon</name>
+    <address>Route du Flon</address>
+    <tel>021/800808</tel>
+    <rooms>
+      <name>01</name>
+      <nbSeat>220</nbSeat>
+    </rooms>
+    <rooms>
+      <name>02</name>
+      <nbSeat>100</nbSeat>
+    </rooms>
+  </location>
+  <location>
+    <name>Galerie</name>
+    <address>Route du Flon</address>
+    <tel>021/800808</tel>
+    <rooms>
+      <name>01</name>
+      <nbSeat>260</nbSeat>
+    </rooms>
+  </location>
 </locations>

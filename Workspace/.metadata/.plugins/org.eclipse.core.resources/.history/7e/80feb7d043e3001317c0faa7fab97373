@@ -1,0 +1,11 @@
+package xml;
+
+public class XmlLocation {
+
+	public XmlLocation(String path){
+		
+		
+	}
+
+
+}

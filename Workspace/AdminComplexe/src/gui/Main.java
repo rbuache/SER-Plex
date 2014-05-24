@@ -5,6 +5,7 @@ import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JTabbedPane;
 
 import launcher.Launcher;
 
@@ -12,7 +13,7 @@ import launcher.Launcher;
 @SuppressWarnings("serial")
 public class Main extends JFrame{
 
-	
+	private JTabbedPane tab = new JTabbedPane();
 	public Main(){
 		
 		this.setSize(500, 500);
@@ -21,7 +22,10 @@ public class Main extends JFrame{
 		Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 		this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
 		
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+		this.add(tab);
+
 		//Dialog : XML database path
 		String s = (String)JOptionPane.showInputDialog(
 				   this,
@@ -36,8 +40,16 @@ public class Main extends JFrame{
 			System.exit(0);
 		else{
 			Launcher.databasePath = s;
+			
 			this.setVisible(true);
 		}
+		
+		Launcher.initXML();
+		
+		tab.addTab("Gérer les sites", new Site());
+		tab.addTab("Gérer l'horaire de projection", new Horaire());
+		tab.addTab("Mise à jour média", new Media());
+		
 		
 	}
 	

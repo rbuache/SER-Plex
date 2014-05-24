@@ -1,0 +1,129 @@
+package gui;
+
+import java.awt.BorderLayout;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.util.Vector;
+
+import javax.swing.BoxLayout;
+import javax.swing.DefaultListSelectionModel;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.ListSelectionModel;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import javax.swing.event.TableModelEvent;
+import javax.swing.event.TableModelListener;
+import javax.swing.table.AbstractTableModel;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
+import javax.swing.table.TableModel;
+
+import org.jdom2.Element;
+
+import launcher.Launcher;
+
+@SuppressWarnings("serial")
+public class Site extends JPanel{
+
+	String[] coloneSite = {"Nom",
+            "Adresse",
+            "Telephone"};
+	
+	String[] coloneRoom = {"Nom",
+            "Nombre de siège"};
+	
+	JTable site = new JTable();
+	JTable room = new JTable();
+	
+	public Site(){
+		
+		site.setSize(300, 50);
+		
+		site.setVisible(true);
+		this.setLayout(new BoxLayout(this, 1));
+		this.add(new JLabel("Les différents sites du complexe :"),BorderLayout.NORTH);
+		
+		JScrollPane spSite = new JScrollPane(site);
+		this.add(spSite);
+		this.add(new JButton("Ajoute"));
+		this.add(new JButton("Ajoute"));
+		
+		this.add(new JLabel("Les salles du site sélectionné :"),BorderLayout.CENTER);
+		JScrollPane spRoom = new JScrollPane(room);
+		this.add(spRoom);
+		this.add(new JButton("Ajoute"));
+		this.add(new JButton("Ajoute"));
+		
+		site.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+		room.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+	
+		site.setModel(new DefaultTableModel(Launcher.location.getLocations(),new String[]{"Site","Adresse","Téléphone","node"}));
+		site.removeColumn(site.getColumnModel().getColumn(3));
+		room.setModel(new MyModele(new Object[0][2],new String[]{"Nom","Nombre de place"}));
+
+		site.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
+			
+			@Override
+			public void valueChanged(ListSelectionEvent arg0) {
+				System.out.println(((DefaultListSelectionModel)arg0.getSource()).getMinSelectionIndex());
+				//Element e = (Element)Site.this.site.getModel().getValueAt(arg0.getLastIndex(), 3);
+				//Site.this.room.setModel((new MyModele(Launcher.location.getRooms(e),new String[]{"Nom","Nombre de place"})));
+				
+				
+			}
+		});
+	}
+	private class MyModele extends AbstractTableModel {
+		private Object[][] data;
+		
+		private String[] titre;
+
+		public MyModele(Object[][] t,String[] h){
+			data = t;
+			titre = h;
+		}
+	    	
+        public int getColumnCount() {
+            return titre.length;
+        }
+ 
+        public int getRowCount() {
+            return data.length;
+        }
+ 
+        public String getColumnName(int col) {
+            return titre[col];
+        }
+ 
+        public Object getValueAt(int row, int col) {
+            return data[row][col];
+        }
+
+        public boolean isCellEditable(int row, int col) {
+
+                return false;
+
+        }
+        
+        public void addRow(Object[] o){
+        	Object[][] tmp = new Object[data.length+1][];
+        	System.arraycopy( data, 0, tmp, 0, data.length );
+        	tmp[data.length] = o;
+        	data = tmp;
+        }
+        public Object[][] getData(){
+        	return data;
+        }
+        public String[] getTitle(){
+        	return titre;
+        }
+
+
+	    
+	    
+	}
+}
