@@ -10,23 +10,29 @@
 <xsl:template match="/">
 
 	<xsl:result-document href="medialocal.xml" format="page">
-		<xsl:for-each select="$planif/planifications/movie">
-			<xsl:apply-templates select="./name"/>
-			<xsl:apply-templates select="./schedule"/>
-			<xsl:variable name="nomFilm" select="name" />
-			<xsl:element name="age">
-				<xsl:value-of select="$film/movies/movie[name=$nomFilm]/minimumAge" />
-			</xsl:element>
-		</xsl:for-each>
+		<xsl:element name="medialocal">
+			<xsl:for-each select="$planif/planifications/movie">
+				<!-- on ne prend que les films diffusés à la date courante-->
+				<xsl:if test="./schedule/date = format-date(current-date(), '[Y]-[M01]-[D01]')">
+					<xsl:element name="movie">
+						<xsl:apply-templates select="./name"/>
+						<xsl:apply-templates select="./schedule"/>
+						<xsl:variable name="nomFilm" select="name" />
+						<xsl:element name="age">
+							<xsl:value-of select="$film/movies/movie[name=$nomFilm]/minimumAge" />
+						</xsl:element>
+					</xsl:element>
+				</xsl:if>
+			</xsl:for-each>
+		</xsl:element>
 	</xsl:result-document>
 </xsl:template>
 
 <!--  template pour le nom du film-->
  <xsl:template match="name">
 	<xsl:element name="name">
-		<xsl:value-of select="./name" />
+		<xsl:value-of select="." />
 	</xsl:element>
-	<br />
 </xsl:template>
 
 <!--  template pour le planning-->
@@ -35,15 +41,12 @@
 	<xsl:element name="location">
 		<xsl:value-of select="./location" />
 	</xsl:element>
-	<br />
 	<xsl:element name="date">
 		<xsl:value-of select="./date" />
 	</xsl:element>
-	<br />
 	<xsl:element name="hour">
 		<xsl:value-of select="./hour" />
 	</xsl:element>
-	<br />
 	
 </xsl:template>
 
