@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;xml.XmlPanification&apos; to &apos;XmlPlanification&apos;&#x0D;&#x0A;- Original project: &apos;AdminComplexe&apos;&#x0D;&#x0A;- Original element: &apos;xml.XmlPanification&apos;&#x0D;&#x0A;- Renamed element: &apos;xml.XmlPlanification&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;XmlPanification&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;xml{XmlPanification.java[XmlPanification" matchStrategy="1" name="XmlPlanification" qualified="false" references="true" similarDeclarations="false" stamp="1401031323162" textual="false" version="1.0"/>
-</session>
