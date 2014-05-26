@@ -1,0 +1,25 @@
+package xml;
+
+import javax.swing.JOptionPane;
+
+import jdom.util.IO;
+import launcher.Launcher;
+
+import org.jdom2.Document;
+
+public class XmlPanification {
+	private Document doc;
+	private String file;
+	
+	public XmlPanification(String path){
+		
+		try {
+			file = path + "/planification.xml";
+			doc = IO.getDocument(file);
+		} catch (Exception e) {
+			JOptionPane.showMessageDialog(Launcher.gui, "Path to XML Location not valid\n" + file,"Crash", JOptionPane.ERROR_MESSAGE);
+			System.exit(-1);
+		}
+		
+	}
+}

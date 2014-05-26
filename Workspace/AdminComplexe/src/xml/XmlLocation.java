@@ -98,4 +98,15 @@ public class XmlLocation {
 		e.getChild("nbSeat").setText(arg[1]);
 		save();
 	}
+	public void createRoom(Element location){
+		Element e = new Element("rooms");
+		e.addContent(new Element("name"));
+		e.addContent(new Element("nbSeat"));
+		location.addContent(e);
+		save();
+	}
+	public void deleteRoom(Element room){
+		room.getParent().removeContent(room);
+		save();
+	}
 }

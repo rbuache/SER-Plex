@@ -1,0 +1,64 @@
+package gui;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JSeparator;
+import javax.swing.JTable;
+
+import launcher.Launcher;
+
+@SuppressWarnings("serial")
+public class Horaire extends JPanel{
+
+	JComboBox<String> movieDispo = new JComboBox<>();
+	JComboBox<String> movieSchedule = new JComboBox<>();
+	JTable schedule = new JTable();
+	JButton addMovie = new JButton("Ajouter film");
+	JButton delMovie = new JButton("Supprimer film");
+	JButton addSchedule = new JButton("Ajouter Schedule");
+	JButton delSchedule = new JButton("Supprimer Schedule");
+	
+	public Horaire(){
+		add(new JLabel("Film disponible:"));
+		add(movieDispo);
+		add(new JLabel("Film à l'affiche:"));
+		add(movieSchedule);
+		add(addMovie);
+		add(delMovie);
+		add(addSchedule);
+		add(delSchedule);
+		JScrollPane sc = new JScrollPane(schedule);
+		add(sc);
+		
+		updateMovies();
+		updatePlanification();
+		
+		addMovie.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				String select = (String)movieDispo.getSelectedItem();
+				Launcher.planification.addPlanification(select);
+				updatePlanification();
+			}
+		});
+		
+	}
+	private void updateMovies(){
+		movieDispo.removeAllItems();
+		for(String s : Launcher.planification.getMovies()){
+			movieDispo.addItem(s);
+		}
+	}
+	private void updatePlanification(){
+		movieSchedule.removeAllItems();
+		for(String s : Launcher.planification.getPlanification()){
+			movieSchedule.addItem(s);
+		}
+	}
+}

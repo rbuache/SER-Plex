@@ -3,9 +3,6 @@ package gui;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.util.Vector;
 
 import javax.swing.BoxLayout;
 import javax.swing.DefaultListSelectionModel;
@@ -19,10 +16,7 @@ import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
-import javax.swing.table.AbstractTableModel;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableColumn;
-import javax.swing.table.TableModel;
 
 import org.jdom2.Element;
 
@@ -119,7 +113,23 @@ public class Site extends JPanel{
 			
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				// TODO Auto-generated method stub
+				if(site.getSelectedRow() >= 0){
+					Element e = (Element)site.getModel().getValueAt(site.getSelectedRow(), 3);
+					Launcher.location.createRoom(e);
+					Site.this.room.setModel((new DefaultTableModel(Launcher.location.getRooms(e),new String[]{"Nom","Nombre de place","node"})));
+					room.removeColumn(room.getColumnModel().getColumn(2));
+					
+					room.getModel().addTableModelListener(new TableModelListener() {
+						
+						@Override
+						public void tableChanged(TableModelEvent arg0) {
+							Launcher.location.updateRoom((Element)Site.this.room.getModel().getValueAt(arg0.getFirstRow(), 2), new String[]{
+									(String)Site.this.room.getModel().getValueAt(arg0.getFirstRow(),0),
+									(String)Site.this.room.getModel().getValueAt(arg0.getFirstRow(),1),
+							});
+						}
+					});
+				}
 				
 			}
 		});
@@ -127,8 +137,27 @@ public class Site extends JPanel{
 			
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				// TODO Auto-generated method stub
-				
+				if(room.getSelectedRow() >= 0){
+					
+					Launcher.location.deleteRoom((Element)room.getModel().getValueAt(room.getSelectedRow(), 2));
+					DefaultTableModel tmp = new DefaultTableModel(Launcher.location.getRooms((Element)room.getModel().getValueAt(room.getSelectedRow(),2)),new String[]{"Nom","Nombre de place","node"});
+									
+					tmp.addTableModelListener(new TableModelListener() {
+						
+						@Override
+						public void tableChanged(TableModelEvent arg0) {
+							Launcher.location.updateRoom((Element)Site.this.room.getModel().getValueAt(arg0.getFirstRow(), 3), new String[]{
+									(String)Site.this.room.getModel().getValueAt(arg0.getFirstRow(),0),
+									(String)Site.this.room.getModel().getValueAt(arg0.getFirstRow(),1)
+							});
+						}
+						
+					});
+					
+					
+					Site.this.room.setModel(tmp);
+					Site.this.room.removeColumn(room.getColumnModel().getColumn(2));
+				}
 			}
 		});
 				

@@ -1,0 +1,17 @@
+package gui;
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JTable;
+
+@SuppressWarnings("serial")
+public class Horaire extends JPanel{
+
+	JTable movie = new JTable();
+	JTable schedule = new JTable();
+	JButton addMovie = new JButton("Ajouter");
+	JButton delMovie = new JButton("Supprimer");
+	JButton addSchedule = new JButton("Ajouter");
+	JButton delSchedule = new JButton("Supprimer");
+	
+}

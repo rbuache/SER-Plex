@@ -7,12 +7,12 @@
     <address>Route du Flon</address>
     <tel>021/800808</tel>
     <rooms>
-      <name>01</name>
-      <nbSeat>220</nbSeat>
-    </rooms>
-    <rooms>
       <name>02</name>
       <nbSeat>100</nbSeat>
+    </rooms>
+    <rooms>
+      <name>123</name>
+      <nbSeat>200</nbSeat>
     </rooms>
   </location>
   <location>

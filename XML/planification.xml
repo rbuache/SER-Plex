@@ -1,39 +1,37 @@
-﻿<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../XSL/Stylesheet.xsl"?>
-
-<!DOCTYPE planifications SYSTEM "../DTD/planification.dtd" >
-
+<!DOCTYPE planifications SYSTEM "../DTD/planification.dtd">
 <planifications>
-	<movie>
-		<name>Transformers</name>
-		<schedule>
-			<location room="1">Flon</location>
-			<date>2014-03-12</date>
-			<hour>15.00</hour>
-		</schedule>
-	</movie>
-	<movie>
-		<name>Equilibrium</name>
-		<schedule>
-			<location room="2">Galerie</location>
-			<date>2014-03-14</date>
-			<hour>17.00</hour>
-		</schedule>
-	</movie>
-	<movie>
-		<name>American Outlaws</name>
-		<schedule>
-			<location room="1">Flon</location>
-			<date>2014-03-13</date>
-			<hour>18.00</hour>
-		</schedule>
-	</movie>
-	<movie>
-		<name>Megamind</name>
-		<schedule>
-			<location room="4">Flon</location>
-			<date>2014-05-25</date>
-			<hour>15.00</hour>
-		</schedule>
-	</movie>
+  <movie>
+    <name>Transformers</name>
+    <schedule>
+      <location room="1">Flon</location>
+      <date>2014-03-12</date>
+      <hour>16.00</hour>
+    </schedule>
+  </movie>
+  <movie>
+    <name>Equilibrium</name>
+    <schedule>
+      <location room="2">Galerie</location>
+      <date>2014-03-14</date>
+      <hour>17.00</hour>
+    </schedule>
+  </movie>
+  <movie>
+    <name>American Outlaws</name>
+    <schedule>
+      <location room="1">Flon</location>
+      <date>2014-03-13</date>
+      <hour>18.00</hour>
+    </schedule>
+  </movie>
+  <movie>
+    <name>Megamind</name>
+    <schedule>
+      <location room="4">Flon</location>
+      <date>2014-05-25</date>
+      <hour>15.00</hour>
+    </schedule>
+  </movie>
 </planifications>
