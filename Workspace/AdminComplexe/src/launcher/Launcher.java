@@ -1,5 +1,8 @@
 package launcher;
 
+import java.rmi.RemoteException;
+
+import rmi.RmiServer;
 import xml.XmlGenerateMedia;
 import xml.XmlLocation;
 import xml.XmlPlanification;
@@ -17,6 +20,12 @@ public class Launcher {
 	public static void main(String[] args){
 		
 		gui = new Main();
+		try {
+			new RmiServer();
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 	
