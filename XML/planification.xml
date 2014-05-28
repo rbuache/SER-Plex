@@ -6,7 +6,7 @@
     <name>Transformers</name>
     <schedule>
       <location room="1">Flon</location>
-      <date>2014-03-12</date>
+      <date>2014-05-28</date>
       <hour>16.00</hour>
     </schedule>
   </movie>
@@ -14,7 +14,7 @@
     <name>Equilibrium</name>
     <schedule>
       <location room="2">Galerie</location>
-      <date>2014-03-14</date>
+      <date>2014-05-28</date>
       <hour>17.00</hour>
     </schedule>
   </movie>
@@ -22,7 +22,7 @@
     <name>American Outlaws</name>
     <schedule>
       <location room="1">Flon</location>
-      <date>2014-03-13</date>
+      <date>2014-03-27</date>
       <hour>18.00</hour>
     </schedule>
   </movie>
@@ -30,7 +30,7 @@
     <name>Megamind</name>
     <schedule>
       <location room="4">Flon</location>
-      <date>2014-05-25</date>
+      <date>2014-05-28</date>
       <hour>15.00</hour>
     </schedule>
   </movie>

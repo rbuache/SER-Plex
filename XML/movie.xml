@@ -64,8 +64,8 @@
 		<year>2014</year>
 		<director>Craig Gillespie</director>
 		<picture>http://ia.media-imdb.com/images/M/MV5BMTYzOTcyNzA4Nl5BMl5BanBnXkFtZTgwNDYwMTA2MTE@._V1_SY317_CR1,0,214,317_AL_.jpg</picture>
-		<genre>Drama</genre>
 		<minimumAge>8</minimumAge>
+		<genre>Drama</genre>
 	</movie>
 
 </movies>
