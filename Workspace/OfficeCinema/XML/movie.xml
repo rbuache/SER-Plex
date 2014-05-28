@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="../XSL/Stylesheet.xsl"?>
+
+<!DOCTYPE movies SYSTEM "../DTD/movie.dtd">
+
+<movies>
+	<movie>
+		<name>Transformers</name>
+		<resume>Decepticons vs Optimus Prime</resume>
+		<year>2007</year>
+		<director>Michael Bay</director>
+		<picture>http://ia.media-imdb.com/images/M/MV5BMTQwNjU5MzUzNl5BMl5BanBnXkFtZTYwMzc1MTI3._V1_SY317_CR0,0,214,317_.jpg</picture>
+		<genre>Action</genre>
+		<minimumAge>12</minimumAge>
+	</movie>
+	<movie>
+		<name>Equilibrium</name>
+		<resume>blablab</resume>
+		<year>2005</year>
+		<director>Michael Bay</director>
+		<picture>http://ia.media-imdb.com/images/M/MV5BMTQwNjU5MzUzNl5BMl5BanBnXkFtZTYwMzc1MTI3._V1_SY317_CR0,0,214,317_.jpg</picture>
+		<genre>Action</genre>
+		<minimumAge>14</minimumAge>
+	</movie>
+	<movie>
+		<name>American Outlaws</name>
+		<resume>blablab</resume>
+		<year>2005</year>
+		<director>Michael Bay</director>
+		<picture>http://ia.media-imdb.com/images/M/MV5BMTQwNjU5MzUzNl5BMl5BanBnXkFtZTYwMzc1MTI3._V1_SY317_CR0,0,214,317_.jpg</picture>
+		<genre>Action</genre>
+		<minimumAge>13</minimumAge>
+	</movie>
+		<movie>
+		<name>Godzilla</name>
+		<resume>The King will Rise</resume>
+		<year>2014</year>
+		<director>Gareth Edwards</director>
+		<picture>http://ia.media-imdb.com/images/M/MV5BMTQ0ODgzNjg2MV5BMl5BanBnXkFtZTgwNDkxMzc3MDE@._V1_SY317_CR0,0,214,317_AL_.jpg</picture>
+		<genre>Action</genre>
+		<minimumAge>14</minimumAge>
+	</movie>
+		<movie>
+		<name>Neighbors</name>
+		<resume>Family vs. frat</resume>
+		<year>2014</year>
+		<director>Nicholas Stoller</director>
+		<picture>http://ia.media-imdb.com/images/M/MV5BOTQ0OTkzODgyNF5BMl5BanBnXkFtZTgwOTA3OTE4MDE@._V1_SX214_AL_.jpg</picture>
+		<genre>Comedy</genre>
+		<minimumAge>14</minimumAge>
+	</movie>
+		<movie>
+		<name>The Amazing Spider-Man 2</name>
+		<resume>Rise of Electro</resume>
+		<year>2014</year>
+		<director>Marc Webb</director>
+		<picture>http://ia.media-imdb.com/images/M/MV5BOTA5NDYxNTg0OV5BMl5BanBnXkFtZTgwODE5NzU1MTE@._V1_SX214_AL_.jpg</picture>
+		<genre>Action</genre>
+		<minimumAge>14</minimumAge>
+	</movie>
+		<movie>
+		<name>Million Dollar Arm</name>
+		<resume>From the producers of "Invincible" and "Miracle"</resume>
+		<year>2014</year>
+		<director>Craig Gillespie</director>
+		<picture>http://ia.media-imdb.com/images/M/MV5BMTYzOTcyNzA4Nl5BMl5BanBnXkFtZTgwNDYwMTA2MTE@._V1_SY317_CR1,0,214,317_AL_.jpg</picture>
+		<genre>Drama</genre>
+		<minimumAge>9</minimumAge>
+	</movie>
+
+</movies>

@@ -1,10 +1,8 @@
-﻿<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../XSL/Stylesheet.xsl"?>
-
-<!DOCTYPE genres SYSTEM "../DTD/genre.dtd" >
-
+<!DOCTYPE genres SYSTEM "../DTD/genre.dtd">
 <genres>
-	<genre>Action</genre>
-	<genre>Romance</genre>
-	<genre>Guerre</genre>
+  <genre>Action</genre>
+  <genre>Romance</genre>
+  <genre>Guerre</genre>
 </genres>

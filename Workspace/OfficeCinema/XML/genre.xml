@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" ?>
+<?xml-stylesheet type="text/xsl" href="../XSL/Stylesheet.xsl"?>
+
+<!DOCTYPE genres SYSTEM "../DTD/genre.dtd" >
+
+<genres>
+	<genre>Action</genre>
+	<genre>Romance</genre>
+	<genre>Guerre</genre>
+</genres>

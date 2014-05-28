@@ -1,11 +1,9 @@
 package launcher;
 
 import interfaces.IServerOffice;
-
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
-
 import gui.Main;
 import rmi.RmiServer;
 

@@ -1,14 +1,13 @@
 package rmi;
 
+import java.io.File;
 import java.io.Serializable;
-import java.rmi.Naming;
 import java.rmi.RemoteException;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
-import java.rmi.server.UnicastRemoteObject;
 import java.util.Observable;
 import java.util.Observer;
-
+import org.jdom2.Document;
+import org.jdom2.input.SAXBuilder;
+import xml.XmlParse;
 import interfaces.IClientSignal;
 import interfaces.IClientSignal.Signal;
 import interfaces.IServerOffice;
@@ -55,5 +54,28 @@ public class RmiServer extends Observable implements IServerOffice{
             }
         }
     }
-	
+
+	@Override
+	public Document[] getXml() throws RemoteException {
+		if(XmlParse.verify()){
+			Document[] doc = new Document[4];
+			try {
+				doc[0] = getDocument("XML/actor.xml");
+				doc[1] = getDocument("XML/critic.xml");
+				doc[2] = getDocument("XML/genre.xml");
+				doc[3] = getDocument("XML/movie.xml");
+			} catch (Exception e) {
+				return null;
+			}
+			return doc;
+		}
+		else{
+			return null;
+		}
+	}
+	public static Document getDocument(String file) throws Exception {
+		SAXBuilder sxb = new SAXBuilder();
+		File f = new File(file);
+		return sxb.build(f);
+	}
 }

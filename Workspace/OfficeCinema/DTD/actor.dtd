@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT actors (actor)*>
+<!ELEMENT actor (name, biography, born, died?, picture*, filmography*)>
+<!ELEMENT filmography (movie*)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT biography (#PCDATA)>
+<!ELEMENT born (#PCDATA)>
+<!ELEMENT died (#PCDATA)>
+<!ELEMENT picture (#PCDATA)>
+<!ELEMENT movie (#PCDATA)>
+

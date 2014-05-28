@@ -1,11 +1,12 @@
 package launcher;
 
+import interfaces.IServerAdmin;
 import interfaces.IServerOffice;
-
 import java.rmi.Naming;
-import java.rmi.RemoteException;
-
-import rmi.RmiClient;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.rmi.server.UnicastRemoteObject;
+import rmi.RmiServer;
 import xml.XmlGenerateMedia;
 import xml.XmlLocation;
 import xml.XmlPlanification;
@@ -20,6 +21,8 @@ public class Launcher {
 	public static XmlLocation location;
 	public static XmlPlanification planification;
 	public static XmlGenerateMedia media;
+	public static IServerOffice remote;
+	public static RmiServer rmi;
 	
 	public Launcher(){
 
@@ -29,27 +32,27 @@ public class Launcher {
 		
 		gui = new Main();
 
-//		try {
-//			new RmiClient(new SignalOffice());
-//		} catch (RemoteException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
 		try {
 			//we connect to server
 			IServerOffice remoteService = (IServerOffice) Naming.lookup("//localhost:9999/RmiService");
 
 			remoteService.addObserver(new SignalOffice());
 			
+			remote = remoteService;
+			
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
-//		try {
-//		new RmiServer();
-//	} catch (RemoteException e) {
-//		// TODO Auto-generated catch block
-//		e.printStackTrace();
-//	}
+		
+		rmi = new RmiServer();
+		
+        try {
+            Registry rmiRegistry = LocateRegistry.createRegistry(9998);
+            IServerAdmin rmiService = (IServerAdmin) UnicastRemoteObject.exportObject(rmi, 9998);
+            rmiRegistry.bind("RmiServiceAdmin", rmiService);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
 	}
 	
 	public static void initXML(){

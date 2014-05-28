@@ -41,8 +41,8 @@ public class XmlLocation {
 		int count = 0;
 		
 		Element root = doc.getRootElement();
-		List loc = root.getChildren("location");
-		Iterator i = loc.iterator();
+		List<Element> loc = root.getChildren("location");
+		Iterator<Element> i = loc.iterator();
 		
 		Object[][] result = new Object[loc.size()][];
 		while(i.hasNext()){
@@ -78,8 +78,8 @@ public class XmlLocation {
 	
 	public Object[][] getRooms(Element e){
 		int count = 0;
-		List room = e.getChildren("rooms");
-		Iterator i = room.iterator();
+		List<Element> room = e.getChildren("rooms");
+		Iterator<Element> i = room.iterator();
 		
 		Object[][] result = new Object[room.size()][];
 		while(i.hasNext()){

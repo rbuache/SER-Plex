@@ -3,6 +3,8 @@ package interfaces;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
+import org.jdom2.Document;
+
 public interface IServerOffice extends Remote {
 
 	/**
@@ -12,4 +14,5 @@ public interface IServerOffice extends Remote {
 	 */
 	void addObserver(IClientSignal client) throws RemoteException; 
 
+	Document[] getXml() throws RemoteException;
 }

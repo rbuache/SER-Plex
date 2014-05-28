@@ -48,7 +48,7 @@ public class Main extends JFrame{
 		
 		tab.addTab("Gérer les sites", new Site());
 		tab.addTab("Gérer l'horaire de projection", new Horaire());
-		tab.addTab("Mise à jour média", new Media());
+		tab.addTab("Mise à jour", new Media());
 		
 		
 	}

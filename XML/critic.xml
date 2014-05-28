@@ -1,23 +1,21 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../XSL/Stylesheet.xsl"?>
-
 <!DOCTYPE critics SYSTEM "../DTD/critic.dtd">
-
 <critics>
-	<movie name="Transformers">
-		<critic id="1">
-			<content>THIS MOVIE IS BAD</content>
-			<language>English</language>
-			<source>Rui</source>
-			<date>12.03.2014</date>
-			<note>2/5</note>
-		</critic>
-		<critic id="2">
-			<content>THIS MOVIE IS BAD</content>
-			<language>English</language>
-			<source>Rui</source>
-			<date>12.03.2014</date>
-			<note>2/5</note>
-		</critic>
-	</movie>
+  <movie name="Transformers">
+    <critic id="1">
+      <content>THIS MOVIE IS BAD</content>
+      <language>English</language>
+      <source>Rui</source>
+      <date>12.03.2014</date>
+      <note>2/5</note>
+    </critic>
+    <critic id="2">
+      <content>THIS MOVIE IS BAD</content>
+      <language>English</language>
+      <source>Rui</source>
+      <date>12.03.2014</date>
+      <note>2/5</note>
+    </critic>
+  </movie>
 </critics>

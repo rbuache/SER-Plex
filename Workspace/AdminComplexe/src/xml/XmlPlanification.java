@@ -3,7 +3,6 @@ package xml;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 import javax.swing.JOptionPane;
 
@@ -42,8 +41,8 @@ public class XmlPlanification {
 		int count = 0;
 		
 		Element root = doc.getRootElement();
-		List loc = root.getChildren("movie");
-		Iterator i = loc.iterator();
+		List<Element> loc = root.getChildren("movie");
+		Iterator<Element> i = loc.iterator();
 		
 		String[] result = new String[loc.size()];
 		while(i.hasNext()){
@@ -70,8 +69,8 @@ public class XmlPlanification {
 	private Element getElementMovie(String name){
 		Element root = doc.getRootElement();
 
-		List list = root.getChildren("movie");
-		Iterator i = list.iterator();
+		List<Element> list = root.getChildren("movie");
+		Iterator<Element> i = list.iterator();
 		while (i.hasNext ())
 		{
 		    Element el = (Element) i.next ();
@@ -85,8 +84,8 @@ public class XmlPlanification {
 		int count = 0;
 		Element find = getElementMovie(movie);
 		if(find != null){
-			List loc = find.getChildren("schedule");
-			Iterator it = loc.iterator();
+			List<Element> loc = find.getChildren("schedule");
+			Iterator<Element> it = loc.iterator();
 			
 			Object[][] result = new Object[loc.size()][];
 			while(it.hasNext()){
@@ -108,8 +107,8 @@ public class XmlPlanification {
 		int count = 0;
 		
 		Element root = docMovie.getRootElement();
-		List loc = root.getChildren("movie");
-		Iterator i = loc.iterator();
+		List<Element> loc = root.getChildren("movie");
+		Iterator<Element> i = loc.iterator();
 		
 		String[] result = new String[loc.size()];
 		while(i.hasNext()){
