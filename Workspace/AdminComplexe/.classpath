@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="lib" path="lib/jdom-2.0.5.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/RmiInterface"/>
+	<classpathentry kind="lib" path="D:/Rui/Dropbox/HEIG/Semestre 4/SER/Labo Plex/SER-Plex/Tools/saxon9he.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

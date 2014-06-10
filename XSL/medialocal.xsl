@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<xsl:output name="page" method="html"      doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN"/>
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:output name="page" method="xml"      doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN"/>
 
 <!-- Différents fichiers utilisés -->
 <xsl:variable name="planif" select="document('../XML/planification.xml')"/>
@@ -8,6 +8,7 @@
 <xsl:variable name="location" select="document('../XML/location.xml')"/>
 
 <xsl:template match="/">
+	<xsl:result-document href="medialocal.xml" format="page">
 		<xsl:element name="medialocal">
 			<xsl:for-each select="$planif/planifications/movie">
 				<!-- on ne prend que les films diffusés à la date courante-->
@@ -23,6 +24,7 @@
 				</xsl:if>
 			</xsl:for-each>
 		</xsl:element>
+	</xsl:result-document>
 </xsl:template>
 
 <!--  template pour le nom du film-->
