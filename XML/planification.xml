@@ -3,14 +3,6 @@
 <!DOCTYPE planifications SYSTEM "../DTD/planification.dtd">
 <planifications>
   <movie>
-    <name>Transformers</name>
-    <schedule>
-      <location room="1">Flon</location>
-      <date>2014-05-28</date>
-      <hour>16.00</hour>
-    </schedule>
-  </movie>
-  <movie>
     <name>Equilibrium</name>
     <schedule>
       <location room="2">Galerie</location>
@@ -27,11 +19,33 @@
     </schedule>
   </movie>
   <movie>
-    <name>Megamind</name>
+    <name>Neighbors</name>
     <schedule>
-      <location room="4">Flon</location>
+      <location room="4">Galerie</location>
       <date>2014-05-28</date>
       <hour>15.00</hour>
     </schedule>
+  </movie>
+  <movie>
+    <name>Godzilla</name>
+    <schedule>
+      <location room="4">Flon</location>
+      <date>2014-05-28</date>
+      <hour>18.00</hour>
+    </schedule>
+  </movie>
+  <movie>
+    <name>Neighbors</name>
+  </movie>
+  <movie>
+    <name>Transformers</name>
+    <schedule>
+      <location room="1">Flon</location>
+      <date>22.06.2014</date>
+      <hour>15:00</hour>
+    </schedule>
+  </movie>
+  <movie>
+    <name>Transformers</name>
   </movie>
 </planifications>

@@ -4,14 +4,14 @@
 <critics>
   <movie name="Transformers">
     <critic id="1">
-      <content>THIS MOVIE IS BAD</content>
-      <language>English</language>
-      <source>Rui</source>
+      <content>Film d'action avec des robots</content>
+      <language>Français</language>
+      <source>L'Hebdo</source>
       <date>12.03.2014</date>
-      <note>2/5</note>
+      <note>3/5</note>
     </critic>
     <critic id="2">
-      <content>THIS MOVIE IS BAD</content>
+      <content>This movie is bad</content>
       <language>English</language>
       <source>Rui</source>
       <date>12.03.2014</date>
