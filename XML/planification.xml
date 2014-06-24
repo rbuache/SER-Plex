@@ -9,6 +9,11 @@
       <date>2014-06-10</date>
       <hour>17.00</hour>
     </schedule>
+    <schedule>
+      <location room="3">Flon</location>
+      <date>2014-06-24</date>
+      <hour>12:00</hour>
+    </schedule>
   </movie>
   <movie>
     <name>American Outlaws</name>

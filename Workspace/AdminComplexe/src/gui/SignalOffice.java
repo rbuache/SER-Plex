@@ -24,7 +24,7 @@ public class SignalOffice  extends UnicastRemoteObject implements IClientSignal,
 	public void update(Object observable, Signal signalType, String updateMsg)
 			throws RemoteException {
 		if(signalType.equals(Signal.UPDATE_REQUESTED)){
-			JOptionPane.showMessageDialog(Launcher.gui, "Movie in internationnal office has been updated!","Info", JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(Launcher.gui, "Movies from International Office have been updated!","Info", JOptionPane.INFORMATION_MESSAGE);
 		}
 	}
 

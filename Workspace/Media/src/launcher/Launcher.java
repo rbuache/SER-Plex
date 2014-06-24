@@ -18,7 +18,6 @@ public class Launcher {
 		//we connect to server
 		try {
 			remoteService = (IServerAdmin) Naming.lookup("//localhost:9998/RmiServiceAdmin");
-			
 		} catch (MalformedURLException | RemoteException | NotBoundException e) {
 			JOptionPane.showMessageDialog(Launcher.gui, "Error connection remote","Crash", JOptionPane.ERROR_MESSAGE);
 			return;
@@ -27,6 +26,7 @@ public class Launcher {
 		try {
 			gui = new Main(remoteService.getHoraire());
 		} catch (Exception e) {
+			e.printStackTrace();
 			JOptionPane.showMessageDialog(Launcher.gui, "Error during analysis of content","Crash", JOptionPane.ERROR_MESSAGE);
 		}
 	}

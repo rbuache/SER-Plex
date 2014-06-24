@@ -19,6 +19,7 @@ public class Main extends JFrame{
 	private static final long serialVersionUID = 1L;
 
 	public Main(Document doc){
+		
 		this.setSize(500, 500);
 		this.setTitle("Media : horaire du jour");
 		
