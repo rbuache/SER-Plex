@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="org.jdom2.input.SAXBuilder"/>
+<fullyQualifiedTypeName name="org.jdom2.input.sax.XMLReaders"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="xml.XmlParse"/>
+<fullyQualifiedTypeName name="xml.XmlGenerateMedia"/>
+<fullyQualifiedTypeName name="jdom.util.IO"/>
+<fullyQualifiedTypeName name="launcher.Launcher"/>
+<fullyQualifiedTypeName name="rmi.RmiServer"/>
+<fullyQualifiedTypeName name="interfaces.IServerAdmin"/>
+<fullyQualifiedTypeName name="org.jdom2.Document"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="gui.Main"/>
+<fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
+<fullyQualifiedTypeName name="javax.swing.JEditorPane"/>
+<fullyQualifiedTypeName name="org.jdom2.output.XMLOutputter"/>
+<fullyQualifiedTypeName name="org.jdom2.output.Format"/>
+<fullyQualifiedTypeName name="javax.swing.BoxLayout"/>
+<fullyQualifiedTypeName name="javax.swing.Box"/>
+<fullyQualifiedTypeName name="javax.swing.BorderFactory"/>
+<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="java.awt.GridLayout"/>
+</qualifiedTypeNameHistroy>

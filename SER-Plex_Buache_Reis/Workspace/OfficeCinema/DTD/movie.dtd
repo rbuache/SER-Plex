@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT movies (movie)*>
+<!ELEMENT movie (name, resume, year, director+, picture*, genre+, minimumAge)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT resume (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT picture (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT minimumAge (#PCDATA)>
+
